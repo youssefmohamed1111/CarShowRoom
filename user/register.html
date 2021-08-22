@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="../style3.css" />
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">CarInfo</a>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../serv.html">Services</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li><a id="login_link" href="./../user/login.html"></a></li>
+    </ul>
+</header> 
+
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web register Example</h3>
+    <input type="email" placeholder="Your email.." id="email_field" />
+    <input type="password" placeholder="Your Password..." id="password_field1" />
+    <input type="password" placeholder="Confirm Password..." id="password_field2" />
+
+    <button style="background: #5d8ffc; border: 1px solid #5d8ffc;" onclick="register()">Create account</button>
+  </div>
+
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="../js/firebaseAuth.js"></script>
+  
+  <script src="../js/index.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+
+</body>
+</html>

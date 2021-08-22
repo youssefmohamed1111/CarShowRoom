@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  background-image: linear-gradient(to right, #2e2d2d 0%, black 100%);
+  min-height: 100vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  padding: 40px 100px;
+  z-index: 10000;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: white;
+}
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+}
+header.sticky .logo,
+header.sticky ul li a {
+  color: black;
+}
+.all {
+  padding-top: 120px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./pics/counts-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  list-style: none;
+}
+.obox {
+  position: relative;
+  padding: 50px;
+  height: 350px;
+  width: 600px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+}
+.obox::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 15%,
+    transparent 70%
+  );
+}
+.obox h2 {
+  transform: translateY(-80%);
+  text-align: center;
+}
+.obox ul {
+  list-style: none;
+}
+.obox ul li {
+  content: "";
+  padding: 1% 6% 6% 12%;
+  display: inline-block;
+  background: transparent;
+}
+.obox ul li a {
+  text-decoration: none;
+}
+.obox ul li a img {
+  width: 70px;
+}
+.end {
+  background-image: radial-gradient(
+    circle farthest-corner at 1.3% 2.8%,
+    rgba(239, 249, 249, 1) 0%,
+    rgba(182, 199, 226, 1) 100%
+  );
+  width: 100%;
+}
+
+.end h1 {
+  font-weight: 700px;
+  color: black;
+  font-size: 40px;
+}
+
+.end .fst {
+  position: relative;
+}
+
+.end .fst ul {
+  display: flex;
+  list-style: none;
+}
+
+.end .fst ul li a img {
+  width: 50px;
+  padding: 10px 0 10px;
+}
+
+.end .snd ul {
+  display: flex;
+  list-style: none;
+}
+
+.end .snd ul li a {
+  text-decoration: none;
+  padding: 0 40px 0 0;
+  color: black;
+}

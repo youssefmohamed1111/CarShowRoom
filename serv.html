@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./serv.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">CarInfo</a>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#bottom">About</a></li>
+            <li><a style="text-decoration: underline" ; href="./serv.html">Services</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a id="login_link" href="user/login.html"></a></li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <section>
+        <div class="all">
+            <div class="obox">
+                <h2>Choose Your Model</h2><br>
+                <ul>
+                    <li><a href="carbrand/carbrand.html#bmw"><img src="./pics/bmw-logo.png" alt="img"> <br>&nbsp; &nbsp;BMW</a></li>
+                    <li><a href="carbrand/carbrand.html#mercedes"><img src="./pics/mercedes-logo.png" alt="img"> <br>Mercedes</a></li>
+                    <li><a href="carbrand/carbrand.html#volkswagen"><img src="./pics/volkswagen-logo.png" alt="img"> <br>
+                            <p style="font-size:14px">Volkswagen</p>
+                        </a></li> <br>
+                    <li><a href="carbrand/carbrand.html#audi"><img src="./pics/Audilogo3.png" alt="img"> <br>
+                            <p style="font-size:16px">&emsp; Audi</p>
+                        </a></li>
+                    <li><a href="carbrand/carbrand.html#toyota"><img src="./pics/toyota.png" alt="img"><br>
+                            <p style="font-size:16px">&nbsp; Toyota</p>
+                        </a></li>
+                    <li><a href="carbrand/carbrand.html#kia"><img src="./pics/kia.png" alt="img"><br>
+                            <p>&emsp; Kia</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="end" id="bottom">
+        <h1>CarInfo</h1>
+        <div class="fst">
+            <ul>
+                <li><a href="#"><img src="./pics/fbLogo.png" alt=""></a> &nbsp;&nbsp; </li>
+                <li><a href="#"><img src="./pics/twitter1.png" alt="">&nbsp; &nbsp;&nbsp;</a></li>
+                <li><a href="#"><img src="./pics/googlelogo.png" alt=""></a>&nbsp; &nbsp;</li>
+                <li><a href="#"><img src="./pics/youtube.png" alt=""></a>&nbsp;&nbsp; &nbsp;</li>
+                <li><a href="#"><img src="./pics/insta.png" alt=""></a>&nbsp; &nbsp; &nbsp;</li>
+            </ul>
+        </div>
+        <div class="snd">
+            <ul>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Advertise on AI</a></li>
+                <li><a href="#">Copyright 2021,inc</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+<script src="js/firebaseAuth.js"></script>
+</body>
+
+</html>
